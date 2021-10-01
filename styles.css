@@ -13,10 +13,11 @@ header
     
     }
 
-.header img[src = "header.jpg"] 
+img[src = "header.jpg"] 
     {
         border-radius: 50%;
     }
+
 .TextWrap
     {
         background-color: #aaa;
@@ -38,10 +39,10 @@ header
     margin: 0;
     display: grid;
     grid-template-columns:  80% auto;
-    grid-template-rows: 15% 80% auto;
-    grid-template-areas: "header sidebar"
+    grid-template-rows: 30% 70% auto;
+    grid-template-areas: "header header"
                              "section1 sidebar"
-                              "footer sidebar";
+                              "footer footer";
     background-color: rgb(255, 255, 255);
 }
 body
@@ -57,13 +58,39 @@ main
     grid-area: section1;
     background-color: white;
 }
-
 aside
 {
     grid-area: sidebar;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2 2 2;
+    grid-template-areas: "sect1"
+                         "sect2"
+                         "sect3";
 
 }
-
+sect1
+{
+    margin: 20px;
+    padding: 20px;
+    grid-area: sect1;
+    text-align: left;
+    background-color: #aaa;
+    
+}
+sect2
+{
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    grid-area: sect2;
+}
+sect3{
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    grid-area: sect3;
+}
 h1  {
         color: rgb(0, 0, 0);
         font-size: 36px;
@@ -78,16 +105,29 @@ p   {
 p1
     {
         color:  #718096;
-        padding: 0%;
-        margin: 0%;
+        
     }
 
+p3
+    {
+        color: rgb(71, 114, 255);
+    }
 
+p4
+{
+    color: white;
+}
+h3 
+    {
+        color: tomato;
+    }
 footer 
     {
+        grid-area: footer;
         padding: 20px;
         text-align: left;
         margin-top: 20px;
         background-color: rebeccapurple;
     }
+
 </style>
