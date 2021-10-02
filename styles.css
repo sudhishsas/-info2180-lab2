@@ -10,11 +10,13 @@ header
         text-align: center;
         background-color: #63B3ED ; 
         align-content: center;
-    
+        padding-top: 50px;
+        margin: 0px;
     }
 
 img[src = "header.jpg"] 
     {
+        
         border-radius: 50%;
     }
 
@@ -50,7 +52,7 @@ body
 
         font-family: 'Times New Roman', Times, serif;
         padding: 20px;
-  
+        margin 0px;
     }
 
 main 
@@ -60,8 +62,10 @@ main
 }
 aside
 {
+    font-family: 'Times New Roman', Times, serif;
     grid-area: sidebar;
     display: grid;
+    text-align: left;
     grid-template-columns: auto;
     grid-template-rows: 2 2 2;
     grid-template-areas: "sect1"
@@ -75,7 +79,7 @@ sect1
     padding: 20px;
     grid-area: sect1;
     text-align: left;
-    background-color: #aaa;
+    background-color: #E2E8F0;
     
 }
 sect2
@@ -92,7 +96,7 @@ sect3{
     grid-area: sect3;
 }
 h1  {
-        color: rgb(0, 0, 0);
+        color:  #FFFFFF;
         font-size: 36px;
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
@@ -104,30 +108,45 @@ p   {
 
 p1
     {
-        color:  #718096;
+        color:   #718096;
         
     }
 
 p3
     {
-        color: rgb(71, 114, 255);
+        color: #4299E1;
     }
 
 p4
 {
-    color: white;
+    color:  #FFFFFF;
 }
 h3 
     {
-        color: tomato;
+        color:  #48BB78;
     }
+h2{
+    color: #000000;
+}
+
+ul
+{
+    list-style-type: none;
+    
+}
+
+li
+{
+    text-align: left;
+    padding: 0px;
+}
 footer 
     {
         grid-area: footer;
         padding: 20px;
         text-align: left;
         margin-top: 20px;
-        background-color: rebeccapurple;
+        background-color:  #2C5282;
     }
 
 </style>
