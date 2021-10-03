@@ -52,7 +52,6 @@ body
 
         font-family: 'Times New Roman', Times, serif;
         padding: 20px;
-        margin 0px;
     }
 
 main 
@@ -119,6 +118,7 @@ p3
 
 p4
 {
+    margin-left: 40px;
     color:  #FFFFFF;
 }
 h3 
@@ -142,10 +142,11 @@ li
 }
 footer 
     {
+
         grid-area: footer;
         padding: 20px;
         text-align: left;
-        margin-top: 20px;
+        margin-left: 0px;
         background-color:  #2C5282;
     }
 
